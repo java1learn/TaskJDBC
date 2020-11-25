@@ -59,4 +59,15 @@ public class User {
     public void setAge(Byte age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder();
+        return out.append("\n").append("User | ")
+                .append("id = ").append(id).append("\t")
+                .append("name = ").append(name).append("\t")
+                .append("lastName = ").append(lastName).append("\t")
+                .append("age = ").append(age).toString();
+
+    }
 }
